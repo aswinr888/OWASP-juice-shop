@@ -25,7 +25,7 @@ resource "azurerm_app_service" "appservice" {
   resource_group_name = azurerm_resource_group.rg.name
 
   site_config {
-    dotnet_framework_version = "v4.0"
+    dotnet_framework_version = "v5.0"
     remote_debugging_enabled = "true"
     remote_debugging_version = "VS2019"
   }
