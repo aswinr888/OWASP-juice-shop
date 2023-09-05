@@ -23,6 +23,7 @@ resource "azurerm_app_service" "appservice" {
   location = azurerm_resource_group.rg.location
   name = "CyberPWN-appservice"
   resource_group_name = azurerm_resource_group.rg.name
+  client_cert_enabled = true
 
   site_config {
     dotnet_framework_version = "v5.0"
