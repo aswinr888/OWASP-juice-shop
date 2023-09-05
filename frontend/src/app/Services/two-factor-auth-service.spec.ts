@@ -77,7 +77,7 @@ describe('TwoFactorAuthServiceService', () => {
       tick()
 
       expect(req.request.method).toBe('POST')
-      expect(req.request.body).toEqual({ password: 's3cr3t!' })
+      expect(req.request.body).toEqual({ password: '' })
       expect(res).toBe(undefined)
       httpMock.verify()
     })
